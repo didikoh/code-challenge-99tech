@@ -217,7 +217,8 @@
 
 .metric span {
   font-weight: 600;
-  color: #666;
+  color: #333;
+  font-size: 14px;
 }
 
 .metric code {

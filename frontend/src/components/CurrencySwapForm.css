@@ -65,6 +65,8 @@
   padding: 16px;
   border: 2px solid transparent;
   transition: all 0.2s ease;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .input-group:focus-within {
@@ -75,6 +77,7 @@
 
 .amount-input {
   flex: 1;
+  min-width: 0;
   border: none;
   background: transparent;
   font-size: 24px;
@@ -105,7 +108,9 @@
   cursor: pointer;
   outline: none;
   min-width: 100px;
+  max-width: 120px;
   transition: background 0.2s ease;
+  flex-shrink: 0;
 }
 
 .token-select:hover {
@@ -121,6 +126,7 @@
   height: 32px;
   border-radius: 50%;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .price-info {
